@@ -1,0 +1,121 @@
+.Navbar {
+  width: 100vw;
+  height: 10vh;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  top: 0;
+}
+
+.Navbar-logo {
+  height: 40px;
+}
+
+.Navbar-menu-list-link {
+  color: #ff5b79;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Poppins Regular";
+  padding: 7px 20px 7px 20px;
+}
+
+.Navbar-menu-list-link-active {
+  color: #ff5b79;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Poppins Regular";
+  padding: 7px 20px 7px 20px;
+  border-bottom-width: 1px;
+  border-bottom-color: #ff5b79;
+  border-bottom-style: solid;
+}
+
+.Navbar-menu-list-action {
+  color: #ff5b79;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Poppins Regular";
+  margin-left: 20px;
+  padding: 7px 20px 7px 20px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #ff5b79;
+  border-style: solid;
+}
+
+.Navbar-menu-list-action-active {
+  color: #ff5b79;
+  border-color: #e7cdd6;
+  background-color: #e7cdd6;
+}
+
+@media only screen and (min-width: 800px) {
+  .Navbar {
+    position: fixed;
+  }
+
+  .Navbar-logo {
+    float: left;
+    padding-left: 50px;
+  }
+
+  .Navbar-menu {
+    padding-right: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+  }
+
+  .Navbar-menu-list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .Navbar-menu-list-link {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .Navbar-menu-list-link:hover {
+    color: #e7cdd6;
+  }
+
+  .Navbar-menu-list-link-active {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .Navbar-menu-list-link-active:hover {
+    color: #e7cdd6;
+    border-bottom-width: 1px;
+    border-bottom-color: #e7cdd6;
+    border-bottom-style: solid;
+  }
+
+  .Navbar-menu-list-action {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .Navbar-menu-list-action:hover {
+    color: #e7cdd6;
+    border-color: #e7cdd6;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Navbar {
+    width: 100vw;
+    height: 100px;
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Navbar-menu {
+    display: none;
+  }
+}

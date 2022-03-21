@@ -1,0 +1,40 @@
+{
+  "name": "crypto-horses-website",
+  "private": true,
+  "scripts": {
+    "dev": "npx webpack --mode development",
+    "prod": "npx webpack --mode production",
+    "server-dev": "npx webpack-dev-server --mode development",
+    "server-prod": "npx webpack-dev-server --mode production"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "react": "^17.0.2",
+    "react-animejs": "^0.5.6",
+    "react-dom": "^17.0.2",
+    "react-google-maps": "^9.4.5",
+    "react-page-scroller": "^2.2.1",
+    "react-router-dom": "^6.2.1",
+    "react-transition-group": "^4.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.6.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.1",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}

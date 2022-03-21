@@ -1,0 +1,47 @@
+.Loading {
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.Loading-view {
+  width: 200px;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Loading-view-logo {
+  width: 100%;
+}
+
+.Loading-view-loading {
+  width: 15%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*
+.Loading-transition-enter {
+  opacity: 0;
+}
+
+.Loading-transition-enter-active {
+  opacity: 1;
+}*/
+
+.Loading-transition-exit {
+  opacity: 1;
+}
+
+.Loading-transition-exit-active {
+  opacity: 0;
+  /*transform: translateY(-100%);*/
+  transition: all 700ms;
+}

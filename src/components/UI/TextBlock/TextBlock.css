@@ -1,0 +1,117 @@
+.TextBlock {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.TextBlock-container {
+  width: 90%;
+  height: 90%;
+  align-items: center;
+}
+
+.TextBlock-container-1-title {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Poppins SemiBold";
+  line-height: 120%;
+}
+
+.TextBlock-container-1-text {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Poppins Thin";
+  line-height: 180%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+  .TextBlock-container {
+    display: flex;
+  }
+
+  .TextBlock-container-1, .TextBlock-container-2 {
+    width: 50%;
+  }
+
+  .TextBlock-container-1-title {
+    font-size: 50px;
+  }
+
+  .TextBlock-container-1-text {
+    font-size: 20px;
+  }
+
+  .TextBlock-container-2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: right;
+  }
+
+  .TextBlock-container-2-image {
+    /*padding: 20px;*/
+    /*max-width: 80%;*/
+    /*max-height: 80%;*/
+    /*background-position: center;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .TextBlock-container-2-image:hover {
+    /*transform: translateY(-5px);*/
+    /*box-shadow: #222 0px 0px 10px;*/
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .TextBlock-container {
+    display: grid;
+  }
+
+  .TextBlock-container-1 {
+    width: 100%;
+  }
+
+  .TextBlock-container-1-title {
+    font-size: 33px;
+  }
+
+  .TextBlock-container-1-text {
+    font-size: 20px;
+  }
+
+  .TextBlock-container-2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .TextBlock-container {
+    display: grid;
+  }
+
+  .TextBlock-container-1 {
+    width: 100%;
+  }
+
+  .TextBlock-container-1-title {
+    font-size: 25px;
+  }
+
+  .TextBlock-container-1-text {
+    font-size: 17px;
+  }
+
+  .TextBlock-container-2 {
+    display: none;
+  }
+}

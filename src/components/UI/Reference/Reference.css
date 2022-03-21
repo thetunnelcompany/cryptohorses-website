@@ -1,0 +1,54 @@
+.Reference {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Reference-text {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Poppins Medium";
+}
+
+@media only screen and (min-width: 800px) {
+  .Reference-text {
+    font-size: 20px;
+    padding-right: 20px;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .Reference-text:hover {
+    color: #ff5b79;
+    transform: translateX(5px);
+  }
+
+  .Reference-image {
+    width: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Reference-text {
+    font-size: 17px;
+    padding-right: 15px;
+  }
+
+  .Reference-image {
+    width: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Reference-text {
+    font-size: 15px;
+    padding-right: 13px;
+  }
+
+  .Reference-image {
+    width: 20px;
+  }
+}

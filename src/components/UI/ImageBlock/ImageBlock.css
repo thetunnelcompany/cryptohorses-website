@@ -1,0 +1,22 @@
+.ImageBlock {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.ImageBlock-container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.ImageBlock-container-image {
+  width: 100%;
+  height: 65%;
+}

@@ -1,0 +1,7 @@
+.Content {
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}

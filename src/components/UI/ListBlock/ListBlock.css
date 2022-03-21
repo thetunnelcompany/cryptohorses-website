@@ -1,0 +1,132 @@
+.ListBlock {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.ListBlock-container {
+  width: 90%;
+  height: 90%;
+  align-items: center;
+}
+
+.ListBlock-container-1-title {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Poppins SemiBold";
+  line-height: 120%;
+}
+
+.ListBlock-container-1-box {
+  display: flex;
+  position: relative;
+  justify-content: left;
+  padding-bottom: 20px;
+}
+
+.ListBlock-container-1-box-list {
+  color: #fff;
+}
+
+.ListBlock-container-1-box-list-text {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Poppins Thin";
+}
+
+@media only screen and (min-width: 800px) {
+  .ListBlock-container {
+    display: flex;
+  }
+
+  .ListBlock-container-1, .ListBlock-container-2 {
+    width: 50%;
+  }
+
+  .ListBlock-container-1-title {
+    font-size: 50px;
+  }
+
+  .ListBlock-container-1-box-list {
+    padding: 30px 30px 30px 10px;
+  }
+
+  .ListBlock-container-1-box-list-text {
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .ListBlock-container-2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: right;
+  }
+
+  .ListBlock-container-2-image {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .ListBlock-container {
+    display: grid;
+  }
+
+  .ListBlock-container-1 {
+    width: 100%;
+  }
+
+  .ListBlock-container-1-title {
+    font-size: 33px;
+  }
+
+  .ListBlock-container-1-box-list {
+    padding: 25px 25px 25px 10px;
+  }
+
+  .ListBlock-container-1-box-list-text {
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .ListBlock-container-2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .ListBlock-container {
+    display: grid;
+  }
+
+  .ListBlock-container-1 {
+    width: 100%;
+  }
+
+  .ListBlock-container-1-title {
+    font-size: 25px;
+  }
+
+  .ListBlock-container-1-box-list {
+    padding: 20px 20px 20px 10px;
+  }
+
+  .ListBlock-container-1-box-list-text {
+    font-size: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .ListBlock-container-2 {
+    display: none;
+  }
+}

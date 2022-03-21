@@ -1,0 +1,104 @@
+.Information {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.Information-container-box-title {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Poppins SemiBold";
+  line-height: 120%;
+}
+
+.Information-container-box-text {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Poppins Thin";
+  line-height: 180%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+  .Information-container {
+    width: 80%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Information-container-image {
+    width: 40%;
+    margin: 50px;
+  }
+
+  .Information-container-box {
+    width: 60%;
+    margin: 50px;
+  }
+
+  .Information-container-box-title {
+    font-size: 50px;
+  }
+
+  .Information-container-box-text {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Information-container {
+    width: 90%;
+    display: block;
+  }
+
+  .Information-container-image {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .Information-container-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Information-container-box-title {
+    font-size: 30px;
+  }
+
+  .Information-container-box-text {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Information-container {
+    width: 90%;
+    display: block;
+  }
+
+  .Information-container-image {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .Information-container-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Information-container-box-title {
+    font-size: 25px;
+  }
+
+  .Information-container-box-text {
+    font-size: 20px;
+  }
+}
