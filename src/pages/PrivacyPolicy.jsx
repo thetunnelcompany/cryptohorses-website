@@ -1,7 +1,16 @@
-import React, {Fragment} from "react"
+import React, {Fragment, useEffect} from "react"
+import {Stats} from "@/api"
+import {useFetching} from "@/hooks"
 import {Loading, Document} from "@/components/UI"
 
 const PrivacyPolicy = () => {
+  const [fetchVisit, isLoading, error] = useFetching(async () => {
+    await Stats.visit("privacypolicy")
+  })
+  useEffect(() => {
+    fetchVisit()
+  }, [])
+
   const title = "Privacy Policy"
   const textPP = "At Clario Tech DMCC, we care about privacy. \
 Therefore we strictly follow all data protection procedures regarding the full security of your personal data. \

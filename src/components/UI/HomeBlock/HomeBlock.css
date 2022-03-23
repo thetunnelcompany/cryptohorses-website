@@ -53,7 +53,7 @@
   align-items: center;
   justify-content: center;
   background-color: #ff5b79;
-  border-radius: 35px;
+  border-radius: 35px 15px 35px 20px;
 }
 
 .HomeBlock-container-2-box-action-link {
@@ -127,7 +127,7 @@
   }
 
   .HomeBlock-container-2-box-action:hover {
-    border-radius: 35px 15px 35px 20px;
+    border-radius: 35px;
   }
 
   .HomeBlock-container-2-box-action-link {

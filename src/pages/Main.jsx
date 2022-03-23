@@ -1,6 +1,6 @@
-import React, {Fragment, useState} from "react"
-// import {Stats} from "@/api"
-// import {useFetching} from "@/hooks"
+import React, {Fragment, useState, useEffect} from "react"
+import {Stats} from "@/api"
+import {useFetching} from "@/hooks"
 import {
   Gradient,
   Home,
@@ -19,10 +19,12 @@ import {
 } from "@/components/UI"
 
 const Main = () => {
-  // const [sendVisit, isLoading, error] = useFetching(async () => {
-  //   await Stats.visit("main")
-  // })
-  // sendVisit()
+  const [fetchVisit, isLoading, error] = useFetching(async () => {
+    await Stats.visit("main")
+  })
+  useEffect(() => {
+    fetchVisit()
+  }, [])
 
   const [currentPage, setCurrentPage] = useState(0)
 

@@ -1,5 +1,5 @@
 import axios from "axios"
-import {API_URL} from "../config"
+import {API_URL} from "@/config"
 
 class Feedbacks {
   async message(firstname, lastname, email, message) {
@@ -14,7 +14,7 @@ class Feedbacks {
       })
       return res.data
     } catch (err) {
-      console.log(err.data)
+      console.log(err)
     }
   }
 }

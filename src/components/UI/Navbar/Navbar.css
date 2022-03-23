@@ -20,13 +20,13 @@
 }
 
 .Navbar-menu-list-link-active {
-  color: #ff5b79;
+  color: #e7cdd6;
   font-size: 15px;
   font-weight: normal;
   font-family: "Poppins Regular";
   padding: 7px 20px 7px 20px;
   border-bottom-width: 1px;
-  border-bottom-color: #ff5b79;
+  border-bottom-color: #e7cdd6;
   border-bottom-style: solid;
 }
 
@@ -44,9 +44,10 @@
 }
 
 .Navbar-menu-list-action-active {
-  color: #ff5b79;
+  color: #e7cdd6;
+  border-width: 1px;
   border-color: #e7cdd6;
-  background-color: #e7cdd6;
+  border-style: solid;
 }
 
 @media only screen and (min-width: 800px) {

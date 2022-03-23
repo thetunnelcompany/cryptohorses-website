@@ -11,7 +11,7 @@ class Stats {
       })
       return res.data
     } catch (err) {
-      console.log(err.data)
+      console.log(err)
     }
   }
 }
