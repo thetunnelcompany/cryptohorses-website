@@ -17,7 +17,9 @@ const HomeBlock = ({image, subtitle, title, text, action, links}) => {
             <a
               className="HomeBlock-container-2-box-action-link"
               href={action.url}
-            >{action.title}</a>
+            >
+              {action.title}
+            </a>
             </div>
             <div className="HomeBlock-container-2-box-links">
               {links.map(({icon, url}) => {

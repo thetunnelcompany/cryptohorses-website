@@ -1,12 +1,9 @@
 import React, {StrictMode} from "react"
 import {HashRouter, Routes, Route} from "react-router-dom"
-// import {Stats} from "./api"
 import routes from "./routes"
 import "./App.css"
 
 const App = () => {
-  // await Stats.visit()
-
   return (
     <StrictMode>
       <HashRouter>

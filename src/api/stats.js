@@ -2,9 +2,13 @@ import axios from "axios"
 import {API_URL} from "../config"
 
 class Stats {
-  async visit() {
+  async visit(page) {
     try {
-      const res = await axios.post(`${API_URL}/stats/visit`)
+      const res = await axios.post(`${API_URL}/api/stats/visit`, {
+        params: {
+          page: page
+        }
+      })
       return res.data
     } catch (err) {
       console.log(err.data)

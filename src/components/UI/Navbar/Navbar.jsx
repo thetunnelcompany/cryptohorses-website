@@ -1,11 +1,12 @@
 import React from "react"
+import {WEBSITE_URL} from "@/config"
 import LogoImage from "@/assets/images/logo-2.svg"
 import "./Navbar.css"
 
 const Navbar = ({currentPage, setCurrentPage, links, actions}) => {
   return (
     <div className="Navbar">
-      <a href="/home">
+      <a href={WEBSITE_URL}>
         <img className="Navbar-logo" src={LogoImage} alt="" />
       </a>
       <div className="Navbar-menu">
