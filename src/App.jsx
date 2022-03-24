@@ -5,7 +5,7 @@ import "./App.css"
 
 const App = () => {
   return (
-    <StrictMode>
+    <>
       <HashRouter>
         <Routes>
           {routes.map(({path, element}, index) => {
@@ -13,7 +13,7 @@ const App = () => {
           })}
         </Routes>
       </HashRouter>
-    </StrictMode>
+    </>
   )
 }
 

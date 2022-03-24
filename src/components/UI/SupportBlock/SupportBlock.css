@@ -26,13 +26,12 @@
 }
 
 .SupportBlock-view-send {
-  width: 35%;
-  height: 100%;
-  display: block;
-  position: relative;
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-columns: 80%;
+  justify-content: center;
+  align-content: center;
   background-color: #fff;
-  /*display: grid;*/
-  text-align: center;
 }
 
 .SupportBlock-view-send-title {
@@ -41,30 +40,21 @@
   font-style: normal;
   font-weight: normal;
   font-family: "Poppins Bold";
-  margin-top: 50px;
- /* position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);*/
+  text-align: center;
 }
 
-.SupportBlock-view-send-name {
+.SupportBlock-view-send-name, .SupportBlock-view-send-email {
   color: #222;
   font-size: 15px;
   font-style: normal;
   font-weight: normal;
   font-family: "Poppins Regular";
-  width: 80%;
   height: 50px;
   border: none;
   background: none;
   border-bottom-color: #f0f0f0;
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  /*position: absolute;
-  top: 70px;
-  left: 50%;
-  transform: translateX(-50%);*/
 }
 
 .SupportBlock-view-send-message {
@@ -73,8 +63,7 @@
   font-style: normal;
   font-weight: normal;
   font-family: "Poppins Regular";
-  width: 80%;
-  height: 30%;
+  height: 150px;
   border: none;
   resize: none;
   background: none;
@@ -82,10 +71,7 @@
   border-style: solid;
   border-width: 2px;
   border-radius: 10px;
-  /*position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
+  padding: 10px;
 }
 
 .SupportBlock-view-send-submit {
@@ -94,7 +80,6 @@
   font-style: normal;
   font-weight: normal;
   font-family: "Poppins Bold";
-  width: 80%;
   height: 50px;
   border: none;
   border-radius: 25px;
@@ -110,6 +95,19 @@
 }*/
 
 @media only screen and (min-width: 800px) {
+  .SupportBlock {
+    min-width: 1200px;
+    min-height: 700px;
+  }
+
+  .SupportBlock-view-send {
+    width: 35%;
+    height: 100%;
+    grid-gap: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
   .SupportBlock-view-map {
     width: 65%;
     height: 100%;
@@ -117,9 +115,7 @@
   }
 
   .SupportBlock-view-map-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: none;
   }
 }
 
@@ -131,12 +127,20 @@
   .SupportBlock-view-send {
     width: 100%;
     height: 90%;
-    display: block;
-    text-align: center;
+    grid-gap: 30px;
     border-radius: 20px;
-    background-color: #fff;
   }
 }
 
 @media only screen and (max-width: 400px) {
+  .SupportBlock-view-map {
+    display: none;
+  }
+
+  .SupportBlock-view-send {
+    width: 100%;
+    height: 100%;
+    grid-gap: 20px;
+    border-radius: 20px;
+  }
 }

@@ -1,20 +1,21 @@
 import React, {useState} from "react"
 import {Link} from "react-router-dom"
-// import {GoogleMap, Marker} from "react-google-maps"
-// import {Anime, stagger} from "react-animejs"
+import {Feedbacks} from "@/api"
+import {useFetching} from "@/hooks"
 import MapImage from "@/assets/images/map.png"
-import TelegramIcon from "@/assets/images/telegram.svg"
 import "./SupportBlock.css"
 
 const SupportBlock = () => {
   const [fullName, setFullName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
+  const [fetchMessage, isLoading, error] = useFetching(async (firstname, lastname, email, message) => {
+    await Feedbacks.message(firstname, lastname, email, message)
+  })
 
   const sendMessage = () => {
-    console.log("Full Name: " + fullName)
-    console.log("Email: " + email)
-    console.log("Message: " + message)
+    const [firstname, lastname] = fullName.split(" ")
+    fetchMessage(firstname, lastname, email, message)
 
     setFullName("")
     setEmail("")
@@ -26,23 +27,23 @@ const SupportBlock = () => {
       <div className="SupportBlock-container">
         <div className="SupportBlock-view">
           <div className="SupportBlock-view-map">
-            {/*<img className="SupportBlock-map-view-image" src={MapImage} />*/}
+            <img className="SupportBlock-view-map-image" src={MapImage} />
           </div>
           <div className="SupportBlock-view-send">
             <label className="SupportBlock-view-send-title">Send Us a Message</label>
             <input
               type="text"
               value={fullName}
-              placeholder="First Name"
+              placeholder="Full Name"
               onChange={(event) => setFullName(event.target.value)}
               className="SupportBlock-view-send-name"
             />
             <input
               type="email"
               value={email}
-              placeholder="Last Name"
+              placeholder="Email"
               onChange={(event) => setEmail(event.target.value)}
-              className="SupportBlock-view-send-name"
+              className="SupportBlock-view-send-email"
             />
             <textarea
               value={message}

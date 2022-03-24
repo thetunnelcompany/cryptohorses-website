@@ -22,9 +22,10 @@ const HomeBlock = ({image, subtitle, title, text, action, links}) => {
             </a>
             </div>
             <div className="HomeBlock-container-2-box-links">
-              {links.map(({icon, url}) => {
+              {links.map(({icon, url}, index) => {
                 return (
                   <a
+                    key={index}
                     className="HomeBlock-container-2-box-links-item"
                     style={{backgroundImage: `url(${icon})`}}
                     href={url}

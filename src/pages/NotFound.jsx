@@ -1,6 +1,7 @@
 import React, {Fragment, useEffect} from "react"
 import {Stats} from "@/api"
 import {useFetching} from "@/hooks"
+import {WEBSITE_URL} from "@/config"
 import {Loading} from "@/components/UI"
 import {Information} from "@/components/UI"
 
@@ -17,7 +18,7 @@ const NotFound = () => {
   const references = [
     {
       title: "Go to home page",
-      url: "/"
+      url: WEBSITE_URL
     }
   ]
 

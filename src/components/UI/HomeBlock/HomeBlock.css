@@ -83,6 +83,11 @@
 }
 
 @media only screen and (min-width: 800px) {
+  .HomeBlock {
+    min-width: 1200px;
+    min-height: 700px;
+  }
+
   .HomeBlock-container {
     width: 100%;
     height: 100%;

@@ -6,7 +6,7 @@ class Feedbacks {
     try {
       const res = await axios({
         method: "POST",
-        url: `${API_URL}/api/feedbaks/message`,
+        url: `${API_URL}/api/feedbacks/message`,
         data: {
           firstname: firstname,
           lastname: lastname,
