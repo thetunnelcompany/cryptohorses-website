@@ -4,8 +4,10 @@ import {API_URL} from "@/config"
 class Feedbacks {
   async message(firstname, lastname, email, message) {
     try {
-      const res = await axios.post(`${API_URL}/api/feedbaks/message`, {
-        params: {
+      const res = await axios({
+        method: "POST",
+        url: `${API_URL}/api/feedbaks/message`,
+        data: {
           firstname: firstname,
           lastname: lastname,
           email: email,
