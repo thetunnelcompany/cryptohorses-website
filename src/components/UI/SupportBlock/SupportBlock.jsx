@@ -21,9 +21,9 @@ const SupportBlock = () => {
   const sendMessage = () => {
     const setOnBorder = (selector) => {
       const el = document.querySelector(selector)
-      el.style.borderWidth = "1px"
+      el.style.borderWidth = "2px"
       el.style.borderStyle = "solid"
-      el.style.borderColor = "#222"
+      el.style.borderColor = "#bc3e55"
     }
 
     const setOffBorder = (selector) => {
@@ -35,9 +35,9 @@ const SupportBlock = () => {
 
     const setOnBorderBottom = (selector) => {
       const el = document.querySelector(selector)
-      el.style.borderBottomWidth = "1px"
+      el.style.borderBottomWidth = "2px"
       el.style.borderBottomStyle = "solid"
-      el.style.borderBottomColor = "#222"
+      el.style.borderBottomColor = "#bc3e55"
     }
 
     const setOffBorderBottom = (selector) => {

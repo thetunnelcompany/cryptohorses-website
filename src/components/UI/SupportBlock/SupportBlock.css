@@ -75,6 +75,7 @@
   height: 50px;
   border: none;
   border-radius: 25px;
+  box-shadow: 0 2px 10px #777;
   background: linear-gradient(120deg, #330f1c 25%, #bc3e55 85%);
 }
 
@@ -105,6 +106,7 @@
     font-family: "Poppins Thin";
     line-height: 180%;
     padding-top: 20px;
+    width: 600px;
   }
 
   .SupportBlock-container-1-references {
@@ -124,6 +126,21 @@
     height: 90%;
     grid-gap: 40px;
     border-radius: 20px;
+  }
+
+  .SupportBlock-container-2-send-submit {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .SupportBlock-container-2-send-submit:hover {
+    transform: scale(1.005);
+    box-shadow: 0 2px 10px #555;
+  }
+
+  .SupportBlock-container-2-send-submit:focus {
+    /*transform: scale(1.03);*/
+    text-decoration: inherit;
   }
 }
 

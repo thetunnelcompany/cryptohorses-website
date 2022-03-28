@@ -106,16 +106,16 @@
     height: 100%;
   }
 
-  .HomeBlock-container-2-subtitle {
-    font-size: 16px;
-  }
-
   .HomeBlock-container-2 {
-    width: 40%;
+    width: 550px;
     position: absolute;
     top: 50%;
-    right: 50px;
-    transform: translateY(-50%);
+    left: 75%;
+    transform: translate(-50%, -50%);
+  }
+
+  .HomeBlock-container-2-subtitle {
+    font-size: 16px;
   }
 
   .HomeBlock-container-2-title {
