@@ -5,9 +5,9 @@ import HorsesImage from "@/assets/images/horses.png"
 
 const BettingSystem = ({id}) => {
   const title = "Analyze and place bet on racehorses"
-  const text = "Administrators of hippodromes are called bookmakers. " +
-    "Bookmakers choose how and when to host the races in their hippodrome. " +
-    "The races can be made public, comply with certain requirements (for example have certain a winning history), or via invite (for specific users)."
+  const text = "The result of the racing is not accidental. " +
+    "It is calculated by a complex formula that takes into account all the parameters of the NFT Horse, it is pedigree, and controlled RNG technology. " +
+    "In the future, we plan to involve leading bookmakers. You can read about this in the Scaling section."
   const references = [
     {
       title: "Read more about Betting system",
