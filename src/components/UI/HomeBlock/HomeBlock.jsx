@@ -1,7 +1,8 @@
 import React from "react"
+import {Social} from "@/components/UI"
 import "./HomeBlock.css"
 
-const HomeBlock = ({image, subtitle, title, text, action, links}) => {
+const HomeBlock = ({image, subtitle, title, text, action}) => {
   return (
     <div className="HomeBlock">
       <div className="HomeBlock-container">
@@ -21,20 +22,7 @@ const HomeBlock = ({image, subtitle, title, text, action, links}) => {
               {action.title}
             </a>
             </div>
-            <div className="HomeBlock-container-2-box-links">
-              {links.map(({icon, url}, index) => {
-                return (
-                  <a
-                    key={index}
-                    className="HomeBlock-container-2-box-links-item"
-                    style={{backgroundImage: `url(${icon})`}}
-                    href={url}
-                  >
-                    <img className="HomeBlock-container-2-box-links-item-icon" src={icon} alt="" />
-                  </a>
-                )
-              })}
-            </div>
+            <Social />
           </div>
         </div>
       </div>

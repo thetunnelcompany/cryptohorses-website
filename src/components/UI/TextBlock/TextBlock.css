@@ -61,19 +61,8 @@
   }
 
   .TextBlock-container-2-image {
-    /*padding: 20px;*/
-    /*max-width: 80%;*/
-    /*max-height: 80%;*/
-    /*background-position: center;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
-  }
-
-  .TextBlock-container-2-image:hover {
-    /*transform: translateY(-5px);*/
-    /*box-shadow: #222 0px 0px 10px;*/
   }
 }
 

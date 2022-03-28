@@ -1,11 +1,11 @@
 import React, {Fragment, useEffect} from "react"
-import {Stats} from "@/api"
+import {Statistics} from "@/api"
 import {useFetching} from "@/hooks"
 import {Loading, Document} from "@/components/UI"
 
 const PrivacyPolicy = () => {
   const [fetchVisit, isLoading, error] = useFetching(async () => {
-    await Stats.visit("privacypolicy")
+    await Statistics.visit("privacy-policy")
   })
   useEffect(() => {
     fetchVisit()

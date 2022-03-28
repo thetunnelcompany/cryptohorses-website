@@ -1,26 +1,29 @@
 import React, {Fragment, useState, useEffect} from "react"
-import {Stats} from "@/api"
+import {Statistics} from "@/api"
 import {useFetching} from "@/hooks"
 import {
-  Gradient,
   Home,
-  NFTs,
-  Economy,
+  AboutUs,
+  NFTHorses,
   Racing,
-  Hippodromes,
-  Auction,
+  BettingSystem,
+  Earnings,
   Roadmap,
+  Partners,
   Support
 } from "@/components"
 import {
   Loading,
+  Gradient,
   Navbar,
   Content
 } from "@/components/UI"
 
 const Main = () => {
+  const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches
+
   const [fetchVisit, isLoading, error] = useFetching(async () => {
-    await Stats.visit("main")
+    await Statistics.visit("main")
   })
   useEffect(() => {
     fetchVisit()
@@ -37,13 +40,13 @@ const Main = () => {
       },
       {
         id: 1,
-        title: "NFTs",
-        Element: NFTs
+        title: "About us",
+        Element: AboutUs
       },
       {
         id: 2,
-        title: "Economy",
-        Element: Economy
+        title: "NFT Horses",
+        Element: NFTHorses
       },
       {
         id: 3,
@@ -52,18 +55,13 @@ const Main = () => {
       },
       {
         id: 4,
-        title: "Hippodromes",
-        Element: Hippodromes
+        title: "Betting System",
+        Element: BettingSystem
       },
       {
         id: 5,
-        title: "Auction",
-        Element: Auction
-      },
-      {
-        id: 6,
-        title: "Roadmap",
-        Element: Roadmap
+        title: "Earnings",
+        Element: Earnings
       }
     ],
     actions: [
@@ -75,16 +73,31 @@ const Main = () => {
     ]
   }
 
+  if (!isMobile) {
+    data.links.push(
+      {
+        id: 6,
+        title: "Roadmap",
+        Element: Roadmap
+      }
+      // {
+      //   id: 7,
+      //   title: "Partners",
+      //   Element: Partners
+      // }
+    )
+  }
+
   return (
     <Fragment>
       <Loading />
       <Gradient />
-      <Navbar
+      {!isMobile && <Navbar
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
         links={data.links}
         actions={data.actions}
-      />
+      />}
       <Content
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}

@@ -43,10 +43,6 @@
   margin: 0;
 }
 
-body {
-  /*cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;*/
-}
-
 a {
   cursor: pointer;
   text-decoration: none;

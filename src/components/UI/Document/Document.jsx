@@ -1,5 +1,5 @@
 import React from "react"
-import {Gradient} from "@/components"
+import {Gradient} from "@/components/UI"
 import LogoImage from "@/assets/images/logo-2.svg"
 import "./Document.css"
 

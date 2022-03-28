@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react"
 import {CSSTransition} from "react-transition-group"
-import {Gradient} from "@/components"
+import {Gradient} from "@/components/UI"
 import LogoImage from "@/assets/images/logo-2.svg"
 import LoadingImage from "@/assets/images/loading.svg"
 import "./Loading.css"
@@ -19,8 +19,6 @@ const Loading = ({delay = 1000, timeout = 400}) => {
       in={isLoading}
       timeout={timeout}
       classNames="Loading-transition"
-      // onEntered={() => setIsLoading(true)}
-      // onExit={() => setIsLoading(false)}
       unmountOnExit
     >
       <div className="Loading">
