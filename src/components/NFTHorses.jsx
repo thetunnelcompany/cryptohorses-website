@@ -15,7 +15,7 @@ const NFTHorses = ({id}) => {
     },
     {
       title: "Read about Breeding",
-      url: `${WHITE_PAPER}/crypto-horses-metaplatform/burning-a-nft`
+      url: `${WHITE_PAPER}/crypto-horses-metaplatform/horses-breeding`
     }
   ]
   const images = [
