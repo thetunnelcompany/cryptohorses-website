@@ -56,7 +56,7 @@
   .TextBlock-container-2 {
     display: flex;
     position: relative;
-    align-items: right;
+    align-items: center;
     justify-content: right;
   }
 
