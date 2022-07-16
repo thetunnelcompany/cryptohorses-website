@@ -5,6 +5,7 @@ const TWITTER = "https://twitter.com/chorsesgame"
 const MEDIUM = "https://medium.com/@cryptohorses"
 const DISCORD = "https://discord.gg/Kmzc5cAdUb"
 const TELEGRAM = "https://t.me/cryptohorses_announcements"
+const TIKTOK = "https://www.tiktok.com/@cryptohorsescom"
 
 export {
   WEBSITE_URL,
@@ -13,5 +14,6 @@ export {
   TWITTER,
   MEDIUM,
   DISCORD,
-  TELEGRAM
+  TELEGRAM,
+  TIKTOK
 }

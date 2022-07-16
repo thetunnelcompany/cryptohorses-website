@@ -1,9 +1,10 @@
 import React from "react"
-import {TWITTER, MEDIUM, DISCORD, TELEGRAM} from "@/config"
+import {TWITTER, MEDIUM, DISCORD, TELEGRAM, TIKTOK} from "@/config"
 import ImageTwitter from "@/assets/images/twitter.png"
 import ImageMedium from "@/assets/images/medium.png"
 import ImageDiscord from "@/assets/images/discord.png"
 import ImageTelegram from "@/assets/images/telegram.png"
+import ImageTiktok from "@/assets/images/tiktok.png"
 import "./Social.css"
 
 const Social = () => {
@@ -23,6 +24,10 @@ const Social = () => {
     {
       icon: ImageTelegram,
       url: TELEGRAM
+    },
+    {
+      icon: ImageTiktok,
+      url: TIKTOK
     }
   ]
 
